@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1" charset=UTF-8" name="viewport">
+        <title>Teams | CP14 DB</title>
+        <link href="../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container body-content">
+            <h3>Teams, page 25 <small class="text-muted">[Sample page for all table pages with many data in project]</small></h3>
+            <form method="get">
+                <div class="form-group form-inline">
+                    <label>Season: </label>
+                    <select name="season" id="selectS" class="form-control">
+                        <option value="-1">All</option>
+                        <option value="0">Not set</option>
+                        <option value="1">1888-89</option>
+                        <option value="2">1955-56</option>
+                        <option value="3">1956-57</option>
+                        <option value="4">Etc...</option>
+                    </select>
+                    <label>Half-decade: </label>
+                    <select name="halfdecade" id="selectH" class="form-control">
+                        <option value="-1">All</option>
+                        <option value="0">Not set</option>
+                        <option value="1">1910-1915</option>
+                        <option value="2">1915-1920</option>
+                        <option value="3">1920-1925</option>
+                        <option value="4">Etc...</option>
+                    </select>
+                    <input type="submit" value="Filter" class="btn btn-outline-dark">
+                </div>
+            </form>
+            <div class="table-responsive-md">
+                <table class="table table-sm table-striped table-hover table-bordered">
+                    <thead class="table-dark align-middle table-center">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col"><a href="#">Team</a></th>
+                            <th scope="col"><a href="#">Fixed name</a></th>
+                            <th scope="col"><a href="#">Club</a></th>
+                            <th scope="col"><a href="#">League</a></th>
+                            <th scope="col"><a href="#">Half-decade</a></th>
+                            <th scope="col"><a href="#">Season</a></th>
+                            <th scope="col"><a href="#">Giggiriva</a></th>
+                            <th scope="col"><a href="#">Jbou41</a></th>
+                            <th scope="col"><a href="#">Valambrosio</a></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>601</td>
+                            <td>Birmingham City 58-59</td>
+                            <td>Birmingham City 58-59</td>
+                            <td>Birmingham City</td>
+                            <td>First Division 1958-59</td>
+                            <td></td>
+                            <td>1958-59</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>602</td>
+                            <td>Birmingham City 59-60</td>
+                            <td>Birmingham City 59-60</td>
+                            <td>Birmingham City</td>
+                            <td>First Division 1959-60</td>
+                            <td></td>
+                            <td>1959-60</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>603</td>
+                            <td>Birmingham City 60-61</td>
+                            <td>Birmingham City 60-61</td>
+                            <td>Birmingham City</td>
+                            <td>First Division 1960-61</td>
+                            <td></td>
+                            <td>1960-61</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>604</td>
+                            <td>Blackburn Rovers 1910-15</td>
+                            <td>Blackburn Rovers 1910-15</td>
+                            <td>Blackburn Rovers</td>
+                            <td>Europe 1910-15</td>
+                            <td>1910-1915</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>605</td>
+                            <td>Blackburn Rovers 1925-30</td>
+                            <td>Blackburn Rovers 1925-30</td>
+                            <td>Blackburn Rovers</td>
+                            <td>Europe 1925-30</td>
+                            <td>1925-1930</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>606</td>
+                            <td>Blackburn Rovers 1990-95</td>
+                            <td>Blackburn Rovers 1990-95</td>
+                            <td>Blackburn Rovers</td>
+                            <td>UEFA 1990-95</td>
+                            <td>1990-1995</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>607</td>
+                            <td>Blackburn Rovers 1995-00</td>
+                            <td>Blackburn Rovers 1995-00</td>
+                            <td>Blackburn Rovers</td>
+                            <td>UEFA 1995-00</td>
+                            <td>1995-2000</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>608</td>
+                            <td>Blackburn Rovers 88-89</td>
+                            <td>Blackburn Rovers 88-89</td>
+                            <td>Blackburn Rovers</td>
+                            <td>Football League 1888-89</td>
+                            <td></td>
+                            <td>1888-89</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>609</td>
+                            <td>Blackburn Rovers 94-95</td>
+                            <td>Blackburn Rovers 94-95</td>
+                            <td>Blackburn Rovers</td>
+                            <td>Premier League 1994-95</td>
+                            <td></td>
+                            <td>1994-95</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="./entity.html">LOOK</a></td>
+                        </tr>
+                        <tr>
+                            <td>610</td>
+                            <td>Blackburn Rovers 95-96</td>
+                            <td>Blackburn Rovers 95-96</td>
+                            <td>Blackburn Rovers</td>
+                            <td>Premier League 1995-96</td>
+                            <td></td>
+                            <td>1995-96</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>611</td>
+                            <td>Blackpool 1950-55</td>
+                            <td>Blackpool 1950-55</td>
+                            <td>Blackpool</td>
+                            <td>Europe 1950-55</td>
+                            <td>1950-1955</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>612</td>
+                            <td>Boavista 01-02</td>
+                            <td>Boavista 01-02</td>
+                            <td>Boavista</td>
+                            <td>FIFA 2001-02</td>
+                            <td></td>
+                            <td>2001-02</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>613</td>
+                            <td>Boavista 2000-05</td>
+                            <td>Boavista 2000-05</td>
+                            <td>Boavista</td>
+                            <td>UEFA 2000-05</td>
+                            <td>2000-2005</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>614</td>
+                            <td>Boavista 99-00</td>
+                            <td>Boavista 99-00</td>
+                            <td>Boavista</td>
+                            <td>FIFA 1999-00</td>
+                            <td></td>
+                            <td>1999-00</td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>615</td>
+                            <td>Boca Juniors 1920-25</td>
+                            <td>Boca Juniors 1920-25</td>
+                            <td>Boca Juniors</td>
+                            <td>South America 1920-25</td>
+                            <td>1920-1925</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>616</td>
+                            <td>Boca Juniors 1925-30</td>
+                            <td>Boca Juniors 1925-30</td>
+                            <td>Boca Juniors</td>
+                            <td>South America 1925-30</td>
+                            <td>1925-1930</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>617</td>
+                            <td>Boca Juniors 1940-45</td>
+                            <td>Boca Juniors 1940-45</td>
+                            <td>Boca Juniors</td>
+                            <td>Rest of the World 1940-45</td>
+                            <td>1940-1945</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>618</td>
+                            <td>Boca Juniors 1960-65</td>
+                            <td>Boca Juniors 1960-65</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1960-65</td>
+                            <td>1960-1965</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>619</td>
+                            <td>Boca Juniors 1965-70</td>
+                            <td>Boca Juniors 1965-70</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1965-70</td>
+                            <td>1965-1970</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>620</td>
+                            <td>Boca Juniors 1970-75</td>
+                            <td>Boca Juniors 1970-75</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1970-75</td>
+                            <td>1970-1975</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>621</td>
+                            <td>Boca Juniors 1975-80</td>
+                            <td>Boca Juniors 1975-80</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1975-80</td>
+                            <td>1975-1980</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>622</td>
+                            <td>Boca Juniors 1980-85</td>
+                            <td>Boca Juniors 1980-85</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1980-85</td>
+                            <td>1980-1985</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>623</td>
+                            <td>Boca Juniors 1985-90</td>
+                            <td>Boca Juniors 1985-90</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1985-90</td>
+                            <td>1985-1990</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>624</td>
+                            <td>Boca Juniors 1990-95</td>
+                            <td>Boca Juniors 1990-95</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1990-95</td>
+                            <td>1990-1995</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                        <tr>
+                            <td>625</td>
+                            <td>Boca Juniors 1995-00</td>
+                            <td>Boca Juniors 1995-00</td>
+                            <td>Boca Juniors</td>
+                            <td>CONMEBOL 1995-00</td>
+                            <td>1995-2000</td>
+                            <td></td>
+                            <td>True</td>
+                            <td>False</td>
+                            <td>False</td>
+                            <td><a href="#">Look</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination justify-content-center">
+                <a class="btn btn-secondary" href="#">1</a>
+                <a class="btn btn-outline-dark" href="#">22</a>
+                <a class="btn btn-outline-dark" href="#">23</a>
+                <a class="btn btn-outline-dark" href="#">24</a>
+                <span class="btn">25</span>
+                <a class="btn btn-outline-dark" href="#">26</a>
+                <a class="btn btn-outline-dark" href="#">27</a>
+                <a class="btn btn-outline-dark" href="#">28</a>
+                <a class="btn btn-secondary" href="#">164</a>  
+            </div>                  
+        </div>
+    </body>
+</html>

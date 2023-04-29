@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1" charset=UTF-8" name="viewport">
+        <title>Reports & feedback 1</title>
+        <link href="../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container body-content">
+            <h3>Reports & feedback, ver. 1 <small class="text-muted">[for all users]</small></h3>
+            <form asp-anti-forgery="true" action="#" method="post">
+                <div class="validation validation-summary-valid" data-valmsg-summary="true">
+                    <ul><li style="display:none"></li></ul>
+                </div>
+                <input type="hidden" value="site.com" data-val="true" data-val-required="The ReturnUrl field is required." id="ReturnUrl" name="ReturnUrl">
+                <div class="form-group">
+                    <div>
+                        <label for="Username" class="form-label">Username</label>
+                        <input type="text" class="form-control" data-val="true" data-val-required="UsernameRequired" id="Username" name="Username" value="">
+                        <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true"></span>
+                    </div>
+                    <div>
+                        <label for="Email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" data-val="true" data-val-email="WrongEmail" data-val-required="EmailRequired" id="Email" name="Email" value="">
+                        <div class="form-text">We'll never share your email with anyone else.</div>
+                        <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                    </div>
+                    <div>
+                        <label for="Message"class="form-label">Message</label>
+                        <textarea class="form-control" data-val="true" data-val-required="MessageRequired" id="Message" name="Message" value="" rows="3"></textarea>
+                        <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true"></span>
+                    </div>
+                    <button type="submit" class="btn btn-outline-dark">Send</button>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK3129WFUyzT4Lb_B9f3l1uN1kdqNO-2BxANJGFKOgMuOBdMsYVmBhebi7c2RIB2KeS_6jpVpFdhglScRweDX-JUfLx51SfMt6usiBZALLqqw89Kn70rgmu2bKtFgHi4h-7FmE">
+            </form>
+            <p></p>
+            <div class="table-responsive-md">
+                <table class="table table-sm table-striped table-hover table-bordered">
+                    <thead class="table-dark text-center align-middle">
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col"><a href="#">Message date</a></th>   
+                            <th scope="col"><a href="#">User name</a></th>
+                            <th scope="col"><a href="#">Email</a></th>
+                            <th scope="col"><a href="#">Message</a></th>
+                            <th scope="col"><a href="#">Reply</a></th>
+                            <th scope="col"><a href="#">Reply date</a></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>05.01.2023 18:39:00</td>
+                            <td>user1</td>
+                            <td>mail1</td>
+                            <td>message1</td>
+                            <td>reply1</td>
+                            <td>05.01.2023 18:40:00</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>05.01.2023 18:40:00</td>
+                            <td>user2</td>
+                            <td>mail2</td>
+                            <td>message2</td>
+                            <td>reply2</td>
+                            <td>10.03.2023 20:56:00</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>05.01.2023 22:39:00</td>
+                            <td>user3</td>
+                            <td>mail3</td>
+                            <td>message3</td>
+                            <td>reply3</td>
+                            <td>11.04.2023 15:46:00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>29.01.2023 02:06:00</td>
+                            <td>user4</td>
+                            <td>mail4@mail.com</td>
+                            <td>message4</td>
+                            <td>reply4</td>
+                            <td>11.04.2023 16:50:00</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>28.03.2023 19:34:00</td>
+                            <td>user5</td>
+                            <td>mail5@mail.com</td>
+                            <td>message5</td>
+                            <td>reply5</td>
+                            <td>11.04.2023 17:03:00</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>29.03.2023 00:01:00</td>
+                            <td>user6</td>
+                            <td>mail6@mail.com</td>
+                            <td>message6</td>
+                            <td><i>Login to reply</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>29.03.2023 00:09:00</td>
+                            <td>user7</td>
+                            <td>mail7@mail.com</td>
+                            <td>message7</td>
+                            <td><i>Login to reply</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1005</td>
+                            <td>11.04.2023 17:32:00</td>
+                            <td>user8</td>
+                            <td>mail8@mail.com</td>
+                            <td>message8</td>
+                            <td><i>Login to reply</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1006</td>
+                            <td>11.04.2023 17:38:00</td>
+                            <td>user9</td>
+                            <td>mail9@mail.com</td>
+                            <td>message9</td>
+                            <td><i>Login to reply</i></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1007</td>
+                            <td>11.04.2023 17:38:00</td>
+                            <td>user7</td>
+                            <td>mail7@mail.com</td>
+                            <td>message7-2</td>
+                            <td><i>Login to reply</i></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination justify-content-center">
+                <span class="btn text-center">1</span>
+            </div>   
+        </div>
+    </body>
+</html>

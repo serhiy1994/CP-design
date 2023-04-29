@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://localhost:44336/Home/Feedback -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports &amp; feedbacks | CP14 DB</title>
+    <link rel="stylesheet" href="./Reports &amp; feedbacks 1 _ CP14 DB_files/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/">Home</a></li>
+                        <li class="nav-item">Teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/CountryClub">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Club">By club</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/LeagueTeam">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/HalfDecade">By half-decade</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Season">By season</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">National teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/CountryNT">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/LeagueNT">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Period">By period</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Year">By year</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Changelog">Changelog</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Feedback">Report &amp; feedback</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Contacts">Contacts</a></li>
+                        <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://localhost:44336/Home/Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            
+
+
+<form style="margin-top:20px;" method="post" class="form-horizontal" action="https://localhost:44336/Home/SetLanguage?returnUrl=%2FHome%2FFeedback">
+    Language: <select name="culture" onchange="this.form.submit();" data-val="true" data-val-required="The Name field is required." id="requestCulture_RequestCulture_UICulture_Name"><option value="en">English</option>
+<option selected="selected" value="ru">русский</option>
+</select>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK3129WFUyzT4Lb_B9f3l1uN1kdqNO-2BxANJGFKOgMuOBdMsYVmBhebi7c2RIB2KeS_6jpVpFdhglScRweDX-JUfLx51SfMt6usiBZALLqqw89Kn70rgmu2bKtFgHi4h-7FmE"></form>
+        </div>
+    </header>
+    <div class="container body-content">
+        <!--model IEnumerable<CPDatabase.Models.FeedbackLog>-->
+
+<h3>Reports &amp; feedbacks</h3>
+    <form asp-anti-forgery="true" action="https://localhost:44336/Home/MakeFeedback" method="post">
+        <div class="validation validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+        <input type="hidden" value="site.com" data-val="true" data-val-required="The ReturnUrl field is required." id="ReturnUrl" name="ReturnUrl">
+        <div>
+            <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" data-val="true" data-val-required="UsernameRequired" id="Username" name="Username" value="">
+                <span class="field-validation-valid" data-valmsg-for="Username" data-valmsg-replace="true">
+            </span></div>
+            <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" data-val="true" data-val-email="WrongEmail" data-val-required="EmailRequired" id="Email" name="Email" value="">
+                <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true">
+            </span></div>
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <input type="text" data-val="true" data-val-required="MessageRequired" id="Message" name="Message" value="">
+                <span class="field-validation-valid" data-valmsg-for="Message" data-valmsg-replace="true">
+            </span></div>
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-outline-dark">
+            </div>
+        </div>
+    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK3129WFUyzT4Lb_B9f3l1uN1kdqNO-2BxANJGFKOgMuOBdMsYVmBhebi7c2RIB2KeS_6jpVpFdhglScRweDX-JUfLx51SfMt6usiBZALLqqw89Kn70rgmu2bKtFgHi4h-7FmE"></form>
+<table class="table">
+    <tbody><tr>
+        <td>Id</td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=MessageDateDesc">Message date</a></td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=UsernameAsc">User name</a></td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=EmailAsc">Email</a></td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=MessageAsc">Message</a></td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=ReplyAsc">Reply</a></td>
+        <td><a href="https://localhost:44336/Home/Feedback?sortOrder=ReplyDateAsc">Reply date</a></td>
+    </tr>
+        <tr>
+            <td>1</td>
+            <td>05.01.2023 18:39:00</td>
+            <td>user1</td>
+            <td>mail1</td>
+            <td>message1</td>
+            <td>
+reply1            </td>
+            <td>05.01.2023 18:40:00</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>05.01.2023 18:40:00</td>
+            <td>user2</td>
+            <td>mail2</td>
+            <td>message2</td>
+            <td>
+reply2            </td>
+            <td>10.03.2023 20:56:00</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>05.01.2023 22:39:00</td>
+            <td>user3</td>
+            <td>mail3</td>
+            <td>message3</td>
+            <td>
+reply3            </td>
+            <td>11.04.2023 15:46:00</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>29.01.2023 02:06:00</td>
+            <td>user4</td>
+            <td>mail4@mail.com</td>
+            <td>message4</td>
+            <td>
+reply4            </td>
+            <td>11.04.2023 16:50:00</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>28.03.2023 19:34:00</td>
+            <td>user5</td>
+            <td>mail5@mail.com</td>
+            <td>message5</td>
+            <td>
+reply5            </td>
+            <td>11.04.2023 17:03:00</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>29.03.2023 00:01:00</td>
+            <td>user6</td>
+            <td>mail6@mail.com</td>
+            <td>message6</td>
+            <td>
+                    <i>Login to reply</i>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>29.03.2023 00:09:00</td>
+            <td>user7</td>
+            <td>mail7@mail.com</td>
+            <td>message7</td>
+            <td>
+                    <i>Login to reply</i>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1005</td>
+            <td>11.04.2023 17:32:00</td>
+            <td>user8</td>
+            <td>mail8@mail.com</td>
+            <td>message8</td>
+            <td>
+                    <i>Login to reply</i>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1006</td>
+            <td>11.04.2023 17:38:00</td>
+            <td>user9</td>
+            <td>mail9@mail.com</td>
+            <td>message9</td>
+            <td>
+                    <i>Login to reply</i>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1007</td>
+            <td>11.04.2023 17:38:00</td>
+            <td>user7</td>
+            <td>mail7@mail.com</td>
+            <td>message7-2</td>
+            <td>
+                    <i>Login to reply</i>
+            </td>
+            <td></td>
+        </tr>
+</tbody></table>
+<span class="btn">1</span>
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="container"> © 2023 - CPDatabase </div>
+    </footer>
+    <!--<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>-->
+
+</body></html>

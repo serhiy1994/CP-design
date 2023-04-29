@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1" charset=UTF-8" name="viewport">
+        <title>Log in</title>
+        <link href="../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container body-content">
+            <h3>Login page</h3>
+            <h6>(For admins and testers only. Sorry, no registration due to its neccessary!)</h6>
+            <!--<a href="~/Home/Register">Register</a>-->
+            <form asp-anti-forgery="true" action="#" method="post">
+                <div class="validation validation-summary-valid" data-valmsg-summary="true">
+                    <ul><li style="display:none"></li></ul>
+                </div>
+                <div class="form-group">
+                    <div>
+                        <label for="Name">Username</label>
+                        <input type="text" class="form-control" data-val="true" data-val-required="UsernameRequired" id="Name" name="Name" value="">
+                        <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true"></span>
+                    </div>
+                    <div>
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" data-val="true" data-val-required="PasswordRequired" id="Password" name="Password">
+                        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Login</button>
+                </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK312-pkhcymT7y-0byF57hqOYyRLCZJWzW1rVBlyQg8TVifbQRvD-_2pWtDoAUSlHXVH32Jf_CaiZTe8cjTYWKs0gQz8a-C2yFO_tUOj8IJOG3jQUjtbroba5ABtql3wgHvK8">
+            </form>         
+        </div>
+    </body>
+</html>

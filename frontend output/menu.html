@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="width=device-width, initial-scale=1" charset=UTF-8" name="viewport">
+        <title>Menu</title>
+        <link href="../bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./cplogo.png" alt="" width="32" height="32">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>        
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown">Teams</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">All</a></li>
+                      <li><a class="dropdown-item" href="#">By country</a></li>
+                      <li><a class="dropdown-item" href="#">By club</a></li>
+                      <li><a class="dropdown-item" href="#">By league (tournament)</a></li>
+                      <li><a class="dropdown-item" href="#">By half-decade</a></li>
+                      <li><a class="dropdown-item" href="#">By season</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown" data-bs-toggle="dropdown">National teams</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">All</a></li>
+                      <li><a class="dropdown-item" href="#">By country</a></li>
+                      <li><a class="dropdown-item" href="#">By league (tournament)</a></li>
+                      <li><a class="dropdown-item" href="#">By period</a></li>
+                      <li><a class="dropdown-item" href="#">By year</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="#">Changelog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
+                </ul>
+                <form>
+                    <select class="form-select">
+                        <option selected="selected" value="en">English</option>
+                        <option value="ru">русский</option>
+                    </select>                    
+                </form>
+                <button class="btn btn-outline-warning" type="submit">Login</button>
+              </div>
+            </div>
+          </nav>        
+    </body>
+</html>

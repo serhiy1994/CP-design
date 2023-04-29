@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://localhost:44336/Team/CountryClub -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries for Clubs | CP14 DB</title>
+    <link rel="stylesheet" href="./Countries for Clubs _ CP14 DB - 1_files/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/">Home</a></li>
+                        <li class="nav-item">Teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/CountryClub">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Club">By club</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/LeagueTeam">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/HalfDecade">By half-decade</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Season">By season</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">National teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/CountryNT">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/LeagueNT">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Period">By period</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Year">By year</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Changelog">Changelog</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Feedback">Report &amp; feedback</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Contacts">Contacts</a></li>
+                        <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://localhost:44336/Home/Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            
+
+
+<form style="margin-top:20px;" method="post" class="form-horizontal" action="https://localhost:44336/Home/SetLanguage?returnUrl=%2FTeam%2FCountryClub">
+    Language: <select name="culture" onchange="this.form.submit();" data-val="true" data-val-required="The Name field is required." id="requestCulture_RequestCulture_UICulture_Name"><option value="en">English</option>
+<option selected="selected" value="ru">русский</option>
+</select>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK3128UCHOE0q5ZqhL0GKdUzdY0yk-A_DARpSGCvNUODnZ9YYHBmC9wVufdKbvhTOoIjLxeGiRI7ecl3liVuIglEfKj5CoecX7qLzcBnQ4VfBARFHDw8yR6zRV2d5XvtXsq0Nw"></form>
+        </div>
+    </header>
+    <div class="container body-content">
+        <!--model IEnumerable<CPDatabase.Models.CountryClub>-->
+
+<h3>Countries for Clubs</h3>
+<table class="table">
+    <tbody><tr>
+        <th>Id</th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=NameDesc">Country</a></th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=HasSubAsc">Has subcountry</a></th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=SubcountryAsc">Subcountry</a></th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=GiggiAsc">Giggiriva</a></th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=JbouAsc">Jbou41</a></th>
+        <th><a href="https://localhost:44336/Team/CountryClub?sortOrder=ValAsc">Valambrosio</a></th>
+        <td></td>
+    </tr>
+        <tr>
+            <td>1</td>
+            <td>Albania</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td><a href="https://localhost:44336/CountryClub/View/1">Look</a></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Argentina</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/2">Look</a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Armenia</td>
+            <td>True</td>
+            <td>USSR</td>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td><a href="https://localhost:44336/CountryClub/View/3">Look</a></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Austria</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/4">Look</a></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Azerbaijan</td>
+            <td>True</td>
+            <td>USSR</td>
+            <td>False</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/5">Look</a></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Belarus</td>
+            <td>True</td>
+            <td>USSR</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/6">Look</a></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Belgium</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/7">Look</a></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Bolivia</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/8">Look</a></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Bosnia-Herzegovina</td>
+            <td>True</td>
+            <td>Yugoslavia</td>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td><a href="https://localhost:44336/CountryClub/View/9">Look</a></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Brazil</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/10">Look</a></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>Bulgaria</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/11">Look</a></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>Canada</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/12">Look</a></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>Chile</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/13">Look</a></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td>Colombia</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/14">Look</a></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td>Croatia</td>
+            <td>True</td>
+            <td>Yugoslavia</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/15">Look</a></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>Cyprus</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/16">Look</a></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>Czech Republic</td>
+            <td>True</td>
+            <td>CSSR</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/17">Look</a></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td>Denmark</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/18">Look</a></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>Ecuador</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/19">Look</a></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td>England</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/20">Look</a></td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>Fantasy</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/21">Look</a></td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>Finland</td>
+            <td>False</td>
+            <td></td>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td><a href="https://localhost:44336/CountryClub/View/22">Look</a></td>
+        </tr>
+        <tr>
+            <td>23</td>
+            <td>France</td>
+            <td>True</td>
+            <td>Monaco</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/23">Look</a></td>
+        </tr>
+        <tr>
+            <td>24</td>
+            <td>Georgia</td>
+            <td>True</td>
+            <td>USSR</td>
+            <td>True</td>
+            <td>False</td>
+            <td>False</td>
+            <td><a href="https://localhost:44336/CountryClub/View/24">Look</a></td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>Germany</td>
+            <td>True</td>
+            <td>DDR</td>
+            <td>True</td>
+            <td>True</td>
+            <td>True</td>
+            <td><a href="https://localhost:44336/CountryClub/View/25">Look</a></td>
+        </tr>
+</tbody></table>
+<span class="btn">1</span>
+    <a class="btn btn-outline-dark" href="https://localhost:44336/Team/CountryClub?page=2&amp;sortOrder=NameAsc">2</a>
+    <a class="btn btn-outline-dark" href="https://localhost:44336/Team/CountryClub?page=3&amp;sortOrder=NameAsc">3</a>
+
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="container"> © 2023 - CPDatabase </div>
+    </footer>
+    <!--<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>-->
+
+</body></html>

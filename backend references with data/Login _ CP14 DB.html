@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://localhost:44336/Home/Login -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | CP14 DB</title>
+    <link rel="stylesheet" href="./Login _ CP14 DB_files/bootstrap.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/">Home</a></li>
+                        <li class="nav-item">Teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/CountryClub">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Club">By club</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/LeagueTeam">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/HalfDecade">By half-decade</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Team/Season">By season</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">National teams</li>
+                        <li>
+                            <ul>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/All">All</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/CountryNT">By country</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/LeagueNT">By league (tournament)</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Period">By period</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/NT/Year">By year</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Changelog">Changelog</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Feedback">Report &amp; feedback</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark" href="https://localhost:44336/Home/Contacts">Contacts</a></li>
+                        <li class="nav-item">
+                                <a class="nav-link text-dark" href="https://localhost:44336/Home/Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div>
+            
+
+
+<form style="margin-top:20px;" method="post" class="form-horizontal" action="https://localhost:44336/Home/SetLanguage?returnUrl=%2FHome%2FLogin">
+    Language: <select name="culture" onchange="this.form.submit();" data-val="true" data-val-required="The Name field is required." id="requestCulture_RequestCulture_UICulture_Name"><option value="en">English</option>
+<option selected="selected" value="ru">русский</option>
+</select>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK312-pkhcymT7y-0byF57hqOYyRLCZJWzW1rVBlyQg8TVifbQRvD-_2pWtDoAUSlHXVH32Jf_CaiZTe8cjTYWKs0gQz8a-C2yFO_tUOj8IJOG3jQUjtbroba5ABtql3wgHvK8"></form>
+        </div>
+    </header>
+    <div class="container body-content">
+        
+<h3>Login</h3>
+<h5>(For admins and testers only. Sorry, no registration due to its neccessary!)</h5>
+<!--<a href="~/Home/Register">Register</a>-->
+<form asp-anti-forgery="true" action="https://localhost:44336/Home/Login" method="post">
+    <div class="validation validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+    <div>
+        <div class="form-group">
+            <label for="Name">Имя пользователя</label>
+            <input type="text" data-val="true" data-val-required="Необходимо указать имя пользователя." id="Name" name="Name" value="">
+            <span class="field-validation-valid" data-valmsg-for="Name" data-valmsg-replace="true">
+        </span></div>
+        <div class="form-group">
+            <label for="Password">Пароль</label>
+            <input type="password" data-val="true" data-val-required="Необходимо указать пароль." id="Password" name="Password">
+            <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true">
+        </span></div>
+        <div class="form-group">
+            <input type="submit" value="Login" class="btn btn-outline-dark">
+        </div>
+    </div>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8InzXvGanzVPvjjYFBK312-pkhcymT7y-0byF57hqOYyRLCZJWzW1rVBlyQg8TVifbQRvD-_2pWtDoAUSlHXVH32Jf_CaiZTe8cjTYWKs0gQz8a-C2yFO_tUOj8IJOG3jQUjtbroba5ABtql3wgHvK8"></form>
+    </div>
+    <hr>
+    <footer class="footer">
+        <div class="container"> © 2023 - CPDatabase </div>
+    </footer>
+    <!--<script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>-->
+
+</body></html>
