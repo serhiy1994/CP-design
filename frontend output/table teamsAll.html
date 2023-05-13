@@ -9,28 +9,28 @@
         <div class="container body-content">
             <h3>Teams, page 25 <small class="text-muted">[Sample page for all table pages with many data in project]</small></h3>
             <form method="get">
-                <div class="form-group form-inline">
-                    <label>Season: </label>
-                    <select name="season" id="selectS" class="form-control">
-                        <option value="-1">All</option>
-                        <option value="0">Not set</option>
-                        <option value="1">1888-89</option>
-                        <option value="2">1955-56</option>
-                        <option value="3">1956-57</option>
-                        <option value="4">Etc...</option>
-                    </select>
-                    <label>Half-decade: </label>
-                    <select name="halfdecade" id="selectH" class="form-control">
-                        <option value="-1">All</option>
-                        <option value="0">Not set</option>
-                        <option value="1">1910-1915</option>
-                        <option value="2">1915-1920</option>
-                        <option value="3">1920-1925</option>
-                        <option value="4">Etc...</option>
-                    </select>
-                    <input type="submit" value="Filter" class="btn btn-outline-dark">
+                <div class="form-group d-flex flex-row gap-2 align-middle">
+                  <label class="me-2">Season:</label>
+                  <select name="season" id="selectS" class="form-control me-2">
+                    <option value="-1">All</option>
+                    <option value="0">Not set</option>
+                    <option value="1">1888-89</option>
+                    <option value="2">1955-56</option>
+                    <option value="3">1956-57</option>
+                    <option value="4">Etc...</option>
+                  </select>
+                  <label class="me-2">Half-decade:</label>
+                  <select name="halfdecade" id="selectH" class="form-control me-2">
+                    <option value="-1">All</option>
+                    <option value="0">Not set</option>
+                    <option value="1">1910-1915</option>
+                    <option value="2">1915-1920</option>
+                    <option value="3">1920-1925</option>
+                    <option value="4">Etc...</option>
+                  </select>
+                  <input type="submit" value="Filter" class="btn btn-outline-dark">
                 </div>
-            </form>
+              </form>
             <div class="table-responsive-md">
                 <table class="table table-sm table-striped table-hover table-bordered">
                     <thead class="table-dark align-middle table-center">
