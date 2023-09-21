@@ -1,17 +1,17 @@
 PAGE SAMPLE & ELEMENTS TO BE MADE BY S.M.:
-- tables +
-- dropdown lists on table "teamsAll" +
-- entity page +
-- forms +
-- login page +
-- feedback page 1 +
-- feedback page 2 +
-- home page +
-- contact page +
-- changelog page +
-- top menu +
+- tables ++
+- dropdown lists on table "teamsAll" ++
+- entity page ++
+- forms ++
+- login page ++
+- feedback page 1 ++
+- feedback page 2 ++
+- home page ++
+- contact page ++
+- changelog page ++
+- top menu ++
 - header for home page [later]
-- footer +
+- footer ++
 - one AIO (all-in-one) sample [later after all of the above]
 
 BUGS:
